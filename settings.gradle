@@ -1,2 +1,7 @@
 include ':app'
 rootProject.name = "Demo"
+include ':lib_processor'
+include ':lib_annotation'
+
+include ':app_kotlin'
+include ':jniDemo'
