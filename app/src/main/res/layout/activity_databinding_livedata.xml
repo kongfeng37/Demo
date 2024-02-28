@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--定义该布局需要绑定的数据名称和类型-->
+    <data>
+        <variable
+            name="myViewModel"
+            type="com.example.demo.viewmodel.MyViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@{String.valueOf(myViewModel.getData)}" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="@{() -> myViewModel.modifyNumber(-1)}"
+            android:text="减一" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="@{() -> myViewModel.modifyNumber(1)}"
+            android:text="加一" />
+
+<!--        @={} 双向绑定-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@={myViewModel.getDataDes}" />
+<!--@{}单向绑定-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@{myViewModel.getDataDes}" />
+
+    </LinearLayout>
+</layout>
+

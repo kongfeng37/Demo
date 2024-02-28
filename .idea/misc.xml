@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/project/myGithub/Demo/app/src/main/res/drawable/shape_tab_indicator.xml" value="0.136" />
+        <entry key="..\:/Android/project/myGithub/Demo/app/src/main/res/layout/activity_databinding_livedata.xml" value="0.1" />
         <entry key="..\:/Android/project/myGithub/Demo/app/src/main/res/layout/activity_main.xml" value="0.22083333333333333" />
         <entry key="..\:/Android/project/myGithub/Demo/app/src/main/res/layout/fragment_tab.xml" value="0.22083333333333333" />
         <entry key="..\:/Android/project/myGithub/Demo/app/src/main/res/layout/shape_tab_indicator.xml" value="0.10696266397578204" />
