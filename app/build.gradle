@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.demo"
-        minSdkVersion 19
+        minSdkVersion 25
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -35,5 +35,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     implementation 'com.google.android.material:material:1.2.0'
+
+    //使用私有maven的远程依赖
+    implementation 'com.kf:uploadMaven:1.0.0@aar'
 
 }
